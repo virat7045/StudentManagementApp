@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.virat.studentmanagementapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".other.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/AppTheme.PopupOverlay" />
+        <activity android:name=".activity.AboutUsActivity" />
+        <activity android:name=".activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Attendance"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.Assignment_Details"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.Assignment_update"
+            android:parentActivityName=".activity.Assignment_Details"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".activity.Assignment_Add"
+            android:parentActivityName=".activity.Assignment_Details">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.Assignment_Details"/>
+        </activity>
+        <activity
+            android:name=".activity.Quiz_Details"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.Quiz_update"
+            android:parentActivityName=".activity.Quiz_Details"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".activity.Quiz_Add"
+            android:parentActivityName=".activity.Quiz_Details">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.Quiz_Details"/>
+        </activity>
+        <activity
+            android:name=".activity.Practical_Details"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.Practical_update"
+            android:parentActivityName=".activity.Practical_Details"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".activity.Practical_Add"
+            android:parentActivityName=".activity.Practical_Details">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.Practical_Details"/>
+        </activity>
+
+    </application>
+
+</manifest>

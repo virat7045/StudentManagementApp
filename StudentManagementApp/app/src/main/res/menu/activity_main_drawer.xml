@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_attendance"
+            android:icon="@mipmap/attendance"
+            android:title="@string/nav_attendance" />
+        <item
+            android:id="@+id/nav_assignment"
+            android:icon="@mipmap/ic_assignment_black_24dp"
+            android:title="@string/nav_Assignment" />
+        <item
+            android:id="@+id/nav_lab"
+            android:icon="@mipmap/ic_computer_black_24dp"
+            android:title="@string/nav_lab" />
+
+        <item
+            android:id="@+id/nav_quiz"
+            android:icon="@mipmap/ic_question_answer_black_24dp"
+            android:title="@string/nav_quiz" />
+
+    </group>
+
+    <item android:title="Other">
+        <menu>
+
+            <item
+                android:id="@+id/nav_logout"
+                android:title="Log out" />
+        </menu>
+    </item>
+
+</menu>
